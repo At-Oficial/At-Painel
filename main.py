@@ -1,4 +1,5 @@
 import os, sys
+os.system('git pull')
 def restart():
 	python=sys.executable;os.excl(python, python, *sys.argv)
 try:
