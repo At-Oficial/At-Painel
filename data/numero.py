@@ -4,7 +4,7 @@ def consultar():
 	Sair=False
 	while (Sair==False):
 		numero = int(ui.dialog1())
-		r = (f'https://dualityapi.xyz/apis/teste/Consultas%20Privadas/HTML/numero.php?consulta={numero}').text
+		r = requests.get(f'https://dualityapi.xyz/apis/teste/Consultas%20Privadas/HTML/numero.php?consulta={numero}').text
 		if 'A consulta Esta Funcionando Normalmente' in r:
 			msg='A consulta está funcionando normalmente, porém, o Telefone inserido não foi encontrado.'
 		else:
