@@ -6,7 +6,7 @@ def consultar():
 		nome = ui.dialog1()
 		r =requests.get(f'https://dualityapi.xyz/apis/teste/Consultas%20Privadas/HTML/nome.php?consulta={nome}').text
 		if 'A consulta Esta Funcionando Normalmente' in r:
-			msg='A consulta está funcionando normalmente, porém, o Telefone inserido não foi encontrado.'
+			msg='A consulta está funcionando normalmente, porém, o Nome inserido não foi encontrado.'
 		else:
 			msg=r.replace('<p>', '').replace('<br>', '\n')
 		op=int(ui.dialog2(msg))
