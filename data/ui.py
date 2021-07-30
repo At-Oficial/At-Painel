@@ -10,8 +10,8 @@ def banner():
     cor = [Fore.RED]
     banner = r"""
 ====================
-- Painel Privado da AT
-===================="""
+- Painel Privado da AT|Favela|Os Cabuloso
+====================\n"""
     n = 0
     for char in banner:
         sys.stdout.write(f"{choice(cor)}{char}{Style.RESET_ALL}")
@@ -35,4 +35,4 @@ def dialog1():
 
 def dialog2(msg):
 	clear();banner()
-	return input(f'\n{C}====================\n{msg}\n====================\n{C}{G}Deseja fazer uma nova consulta?\n{C}[{G}1{C}] Sim\n[{G}2{C}] Nao\n===> {G}')
+	return input(f'{result}\n{C}====================\n{msg}\n====================\n{C}{G}Deseja fazer uma nova consulta?\n{C}[{G}1{C}] Sim\n[{G}2{C}] Nao\n===> {G}')
