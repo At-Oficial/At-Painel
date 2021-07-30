@@ -11,7 +11,7 @@ def banner():
     banner = r"""
 ====================
 - Painel Privado da AT|Favela|Os Cabuloso
-====================\n"""
+===================="""
     n = 0
     for char in banner:
         sys.stdout.write(f"{choice(cor)}{char}{Style.RESET_ALL}")
