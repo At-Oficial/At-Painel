@@ -10,7 +10,7 @@ def banner():
     cor = [Fore.RED]
     banner = r"""
 ====================
-- Painel Privado da AT -
+🗿 - Painel Privado da AT - 🗿
 ===================="""
     n = 0
     for char in banner:
