@@ -16,13 +16,13 @@ P = "\033[1;35m"
 Sair=False
 while(Sair==False):
 	try:
-		op=int(ui.menu(ms0=f'\n{C}[{G}1{C}] Numero\n{C}[{G}2{C}] CPF\n{C}[{G}3{C}] Nome\n{C}[{G}4{C}] Email\n{C}[{G}5{C}] RG\n{C}[{G}6{C}] Data de Nascimento\n{C}[{G}7{C}] CEP\n{C}[{G}8{C}] Placa\n\n{C}[{P}0{C}] Sair'))
+		op=int(ui.menu(ms0=f'\n{C}[{G}1{C}] Numero\n{C}[{G}2{C}] CPF\n{C}[{G}3{C}] Nome\n{C}[{G}4{C}] Email\n{C}[{G}5{C}] RG\n{C}[{G}6{C}] Data de Nascimento{C}[{P}OFF{C}]\n{C}[{G}7{C}] CEP\n{C}[{G}8{C}] Placa{C}[{P}OFF{C}]\n\n{C}[{P}0{C}] Sair'))
 		if op==1:
 			numero.consultar()
 		elif op==2:
 			cpf.consultar()
 		elif op==3:
-			choice = int(ui.menu(ms0=f'\n{C}[{G}1{C}] Nome-1\n{C}[{G}2{C}] Nome-2'))
+			choice = int(ui.menu(ms0=f'\n{C}[{G}1{C}] Nome-1\n{C}[{G}2{C}] Nome-2{C}[{P}OFF{C}]'))
 			if choice ==1:
 				nome.consultar()
 			elif choice ==2:
