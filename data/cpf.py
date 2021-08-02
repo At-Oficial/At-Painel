@@ -4,7 +4,7 @@ def consultar():
 	Sair=False
 	while (Sair==False):
 		cpf = ui.dialog1()
-		r=requests.get(f'https://lukazinnapi.000webhostapp.com/api/consulta/cpf/cpf2.php?cpf={cpf}').text
+		r=requests.get(f'https://lukazinnapi.000webhostapp.com/api/consulta-api-lukazinn-secret/cpf/cpf2.php?cpf={cpf}').text
 		if 'A Consulta' in r:
 			msg='A consulta está funcionando normalmente, porém o CPF não foi encontrado.'
 		else:
