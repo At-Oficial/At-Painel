@@ -4,7 +4,7 @@ def consultar():
 	Sair=False
 	while (Sair==False):
 		cpf = ui.dialog1()
-		r=requests.get(f'https://lukazinnapi.000webhostapp.com/Kiny-api/cpf.php?cpf={cpf}').text
+		r=requests.get(f'https://dualityapi.xyz/apis/flex_7/Consultas%20Privadas/HTML/cpf.php?consulta={cpf}').text
 		if 'A Consulta' in r:
 			msg='A consulta está funcionando normalmente, porém o CPF não foi encontrado.'
 		else:
