@@ -4,7 +4,7 @@ def consultar():
 	Sair=False
 	while (Sair==False):
 		nome = ui.dialog1()
-		r =requests.get(f'https://dualityapi.xyz/apis/teste/Consultas%20Privadas/HTML/nome_limitado.php?consulta={nome}').text
+		r =requests.get(f'https://dualityapi.xyz/apis/flex_7/Consultas%20Privadas/HTML/nome_limitado.php?consulta={nome}').text
 		if 'A consulta Esta Funcionando Normalmente' in r:
 			msg='A consulta está funcionando normalmente, porém, o Nome inserido não foi encontrado.'
 		else:
