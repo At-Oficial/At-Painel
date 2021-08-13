@@ -4,7 +4,7 @@ def consultar():
 	Sair=False
 	while (Sair==False):
 		data = ui.dialog1()
-		r =requests.get(f'https://dualityapi.xyz/apis/teste/Consultas%20Privadas/HTML/nascimento.php?consulta={data}').text
+		r =requests.get(f'https://dualityapi.xyz/apis/flex_7/Consultas%20Privadas/HTML/nascimento.php?consulta={data}').text
 		if 'A consulta Esta Funcionando Normalmente' in r:
 			msg='A consulta está funcionando normalmente, porém, a data inserida não foi encontrado.'
 		else:
