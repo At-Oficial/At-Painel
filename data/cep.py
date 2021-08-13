@@ -4,7 +4,7 @@ def consultar():
 	Sair=False
 	while (Sair==False):
 		cep = ui.dialog1()
-		r =requests.get(url='https://consulta-cep1.p.rapidapi.com/apis/astrahvhdeus/Consultas%20Privadas/HTML/cep.php', headers={'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.164 Safari/537.36','x-rapidapi-key':'e01238c690msh74f20bdc84d5dcfp122562jsnc9921fa7c4c1','x-rapidapi-host': 'consulta-cep1.p.rapidapi.com'},params={'consulta': cep}).text
+		r =requests.get(f'https://dualityapi.xyz/apis/flex_7/Consultas%20Privadas/HTML/cep.php?consulta={cep}').text
 		if 'A consulta Esta Funcionando Normalmente' in r:
 			msg='A consulta está funcionando normalmente, porém, o CEP inserido não foi encontrado.'
 		else:
