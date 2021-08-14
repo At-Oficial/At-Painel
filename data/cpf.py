@@ -8,7 +8,7 @@ def consultar():
 		if 'A Consulta' in r:
 			msg='A consulta está funcionando normalmente, porém o CPF não foi encontrado.'
 		else:
-			msg=r.replace('''"''', '').replace(',','\n').replace('}', '').replace('{', '').replace('null','')
+			msg=r.replace('<br>, '\n').replace('<p>','')
 		op=int(ui.dialog2(msg))
 		if op ==1:
 			pass
